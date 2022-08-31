@@ -11,7 +11,7 @@ var corsOptions = {
 };
 
 app.get("/image", cors(corsOptions), (req, res) => {
-    const images = ["../images/doge1.jpeg", "../images/doge2.jpeg", "../images/doge3.jpeg"];
+    const images = ["https://zeroxiphyt.github.io/doge-images/images/doge1.jpeg", "https://zeroxiphyt.github.io/doge-images/images/doge1.jpeg", "https://zeroxiphyt.github.io/doge-images/images/doge1.jpeg"];
 
 
     res.json({
@@ -19,4 +19,4 @@ app.get("/image", cors(corsOptions), (req, res) => {
     });
 });
 
-app.listen(3000);
+app.listen(3000, () => console.log('API server is running'));
