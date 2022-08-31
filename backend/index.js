@@ -11,7 +11,7 @@ var corsOptions = {
 };
 
 app.get("/image", cors(corsOptions), (req, res) => {
-    const images = ["../images/doge1.jpeg", "../images/doge2.jpeg", "../images/doge3.jpeg"];
+    const images = ["./images/doge1.jpeg", "./images/doge2.jpeg", "./images/doge3.jpeg"];
 
 
     res.json({
