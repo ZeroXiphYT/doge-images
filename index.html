@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button onclick="getData()">Fetch</button>
+    <br /><br />
+    <img
+      id="img"
+      src="https://www.publicdomainpictures.net/pictures/30000/velka/plain-white-background.jpg"
+    />
+    <script>
+      const img = document.getElementById("img");
+      function getData() {
+        fetch("http://localhost:3000/image")
+          .then((response) => response.json())
+          .then((data) => {
+            console.log(data);
+            img.src = data.imageUrl;
+          });
+      }
+    </script>
+  </body>
+</html>
