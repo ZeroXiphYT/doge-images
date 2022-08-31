@@ -11,7 +11,7 @@ var corsOptions = {
 };
 
 app.get("/image", cors(corsOptions), (req, res) => {
-    const images = ["https://zeroxiphyt.github.io/doge-images/images/doge1.jpeg", "https://zeroxiphyt.github.io/doge-images/images/doge1.jpeg", "https://zeroxiphyt.github.io/doge-images/images/doge1.jpeg"];
+    const images = ["https://zeroxiphyt.github.io/doge-images/images/doge1.jpeg", "https://zeroxiphyt.github.io/doge-images/images/doge2.jpeg", ".https://zeroxiphyt.github.io/doge-images/images/doge3.jpeg"];
 
 
     res.json({
